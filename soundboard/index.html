@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mother's Day Soundboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 class="title">Mother's Day Soundboard 💖</h1>
+    <p class="subtitle">Press any key (0-1) to play a sound!</p>
+
+    <div id="soundboard" class="soundboard-grid">
+        <button data-key="1">1<br>Birds</button>
+        <button data-key="2">2<br>Chime</button>
+        <button data-key="3">3<br>Clapping</button>
+        <button data-key="4">4<br>Harp</button>
+        <button data-key="5">5<br>Heartbeat</button>
+        <button data-key="6">6<br>I Love You</button>
+        <button data-key="7">7<br>Kid Giggle</button>
+        <button data-key="8">8<br>Thank You</button>
+        <button data-key="9">9<br>Waterfall</button>
+        <button data-key="0">0<br>Wind</button>
+
+        <audio data-key="1" src="sounds/birds.mp3"></audio>
+        <audio data-key="2" src="sounds/chime.mp3"></audio>
+        <audio data-key="3" src="sounds/clapping.mp3"></audio>
+        <audio data-key="4" src="sounds/harp.mp3"></audio>
+        <audio data-key="5" src="sounds/heartbeat.mp3"></audio>
+        <audio data-key="6" src="sounds/i-love-you.mp3"></audio>
+        <audio data-key="7" src="sounds/kid-giggle.mp3"></audio>
+        <audio data-key="8" src="sounds/thank-you.mp3"></audio>
+        <audio data-key="9" src="sounds/waterfall.mp3"></audio>
+        <audio data-key="0" src="sounds/wind.mp3"></audio>
+    </div>
+
+    <div id="nowPlaying">Press a key</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
