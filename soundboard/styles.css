@@ -88,16 +88,17 @@ button:active {
     transform: scale(1.05);
 }
 
-button[data-key="1"] { background-image: url("soundboard/assets/Images/birds.jpeg"); }
-button[data-key="2"] { background-image: url("soundboard/assets/Images/chime.jpeg"); }
-button[data-key="3"] { background-image: url("soundboard/assets/Images/clapping.jpeg"); }
-button[data-key="4"] { background-image: url("soundboard/assets/Images/harp.jpeg"); }
-button[data-key="5"] { background-image: url("soundboard/assets/Images/heartbeat.jpeg"); }
-button[data-key="6"] { background-image: url("soundboard/assets/Images/i\ love\ you.jpeg"); }
-button[data-key="7"] { background-image: url("soundboard/assets/Images/kid\ giggle.jpeg"); }
-button[data-key="8"] { background-image: url("soundboard/assets/Images/thank\ you.jpeg"); }
-button[data-key="9"] { background-image: url("soundboard/assets/Images/water\ fall.jpeg"); }
-button[data-key="0"] { background-image: url("soundboard/assets/Images/wind.jpeg"); }
+button[data-key="1"] { background-image: url("assets/Images/birds.jpeg"); }
+button[data-key="2"] { background-image: url("assets/Images/chime.jpeg"); }
+button[data-key="3"] { background-image: url("assets/Images/clapping.jpeg"); }
+button[data-key="4"] { background-image: url("assets/Images/harp.jpeg"); }
+button[data-key="5"] { background-image: url("assets/Images/heartbeat.jpeg"); }
+button[data-key="6"] { background-image: url("assets/Images/i-love-you.jpeg"); }
+button[data-key="7"] { background-image: url("assets/Images/kid-giggle.jpeg"); }
+button[data-key="8"] { background-image: url("assets/Images/thank-you.jpeg"); }
+button[data-key="9"] { background-image: url("assets/Images/water-fall.jpeg"); }
+button[data-key="0"] { background-image: url("assets/Images/wind.jpeg"); }
+
 @media (max-width: 480px) {
     .soundboard-grid button {
         padding: 12px;
