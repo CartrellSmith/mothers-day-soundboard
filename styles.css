@@ -13,13 +13,14 @@ body {
 }
 
 button {
-    padding: 20px;
+    background-color: #f8d7e3;
+    border: 2px solid #e88fb8;
     border-radius: 12px;
-    background: white;
-    border: 2px solid #ff9acb;
-    transition: 0.2s;
-    touch-action: manipulation;
-}
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    transition: 0.2s;}
 
 button:active {
     background: #ffb6d9;
@@ -47,8 +48,7 @@ button:active {
     line-height: 1.2;
     font-size: 1rem;
     font-weight: 600;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    color: #e88fb8;
     cursor: pointer;
     transition: all 0.2s ease;
 }
@@ -87,18 +87,6 @@ button:active {
     box-shadow: 0 0 20px #ff7ab8;
     transform: scale(1.05);
 }
-
-button[data-key="1"] { background-image: url("assets/Images/birds.jpeg"); }
-button[data-key="2"] { background-image: url("assets/Images/chime.jpeg"); }
-button[data-key="3"] { background-image: url("assets/Images/clapping.jpeg"); }
-button[data-key="4"] { background-image: url("assets/Images/harp.jpeg"); }
-button[data-key="5"] { background-image: url("assets/Images/heartbeat.jpeg"); }
-button[data-key="6"] { background-image: url("assets/Images/i-love-you.jpeg"); }
-button[data-key="7"] { background-image: url("assets/Images/kid-giggle.jpeg"); }
-button[data-key="8"] { background-image: url("assets/Images/thank-you.jpeg"); }
-button[data-key="9"] { background-image: url("assets/Images/water-fall.jpeg"); }
-button[data-key="0"] { background-image: url("assets/Images/wind.jpeg"); }
-
 
 @media (max-width: 480px) {
     .soundboard-grid button {
