@@ -95,3 +95,27 @@ button:active {
     }
 }
 
+.footer {
+    margin-top: 40px;
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    color: #d63384;
+    opacity: 0.8;
+}
+
+h2 {
+    color: #d63384;
+}
+
+.title {
+    font-family: "Playfair Display", serif;
+    font-size: 2.8rem;
+    color: #d63384;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #d63384
+}
