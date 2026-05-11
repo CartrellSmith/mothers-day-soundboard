@@ -18,6 +18,7 @@ button {
     background: white;
     border: 2px solid #ff9acb;
     transition: 0.2s;
+    touch-action: manipulation;
 }
 
 button:active {
@@ -27,7 +28,7 @@ button:active {
 
 .soundboard-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 15px;
     width: 90%;
     max-width: 700px;
@@ -35,30 +36,36 @@ button:active {
 }
 
 .soundboard-grid button {
-    padding: 20px;
+    padding: 15px;
     background: #fff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     border: 2px solid #ff9acb;
     border-radius: 12px;
-    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+    font-size: 1rem;
     font-weight: 600;
-    color: #d14f87;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
 .soundboard-grid button:hover {
-    background: #ffe1ef;
+    background-color: #ffe1ef;
     transform: translateY(-3px);
 }
 
 .soundboard-grid button:active {
-    background: #ffb6d9;
+    background-color: #ffb6d9;
     box-shadow: 0 0 20px #ff7ab8;
 }
 
 .heart {
     position: absolute;
-    font-size: 24px;
+    font-size: clamp(18px, 4vw, 28px);
     animation: floatUp 1.5s ease-out forwards;
     pointer-events: none;
     user-select: none;
@@ -79,4 +86,22 @@ button:active {
     background: #ffb6d9;
     box-shadow: 0 0 20px #ff7ab8;
     transform: scale(1.05);
+}
+
+button[data-key="1"] { background-image: url("assets/Images/birds.jpeg"); }
+button[data-key="2"] { background-image: url("assets/Images/chime.jpeg"); }
+button[data-key="3"] { background-image: url("assets/Images/clapping.jpeg"); }
+button[data-key="4"] { background-image: url("assets/Images/harp.jpeg"); }
+button[data-key="5"] { background-image: url("assets/Images/heartbeat.jpeg"); }
+button[data-key="6"] { background-image: url("assets/Images/i\ love\ you.jpeg"); }
+button[data-key="7"] { background-image: url("assets/Images/kid\ giggle.jpeg"); }
+button[data-key="8"] { background-image: url("assets/Images/thank\ you.jpeg"); }
+button[data-key="9"] { background-image: url("assets/Images/water\ fall.jpeg"); }
+button[data-key="0"] { background-image: url("assets/Images/wind.jpeg"); }
+
+@media (max-width: 480px) {
+    .soundboard-grid button {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
 }

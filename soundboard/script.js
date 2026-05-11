@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         button.addEventListener("click", (event) => {
             const key = button.getAttribute("data-key");
             playSound(key);
+            button.classList.add("playing");
 
             // Button glow
             button.classList.add("playing");
