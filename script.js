@@ -47,12 +47,13 @@ function playSound(key) {
   const audio = document.querySelector(`audio[data-key="${key}"]`);
   if (!audio) return;
 
-  // HARD CUT: stop all audio
-  hardStopAllAudio();
-
   // Restart sound instantly (rapid fire)
-  audio.currentTime = 0;
-  audio.play();
+audio.currentTime = 0;
+audio.play();
+
+// HARD CUT: stop all other audio
+stopOtherAudio(key);
+
 }
 
 function hardStopAllAudio() {
@@ -70,4 +71,13 @@ function hardStopAllAudio() {
 function removeTransition(event) {
     if (event.propertyName !== "transform") return;
     this.classList.remove("playing");
+}
+
+function stopOtherAudio(activeKey) {
+  document.querySelectorAll("audio").forEach(audio => {
+    if (audio.dataset.key !== activeKey) {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+  });
 }
